@@ -1,0 +1,25 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Reserve IPs for your work</title>
+	</head>
+	<body>
+		<div>
+			<form action="" method="post">
+				<label for="ip">IP:</label>
+				<input type="text" name="ip" id="ip">
+				<input type="submit" name="" value="Search">
+			</form>
+		</div>
+		<div class="">
+			<h2>All IPs</h2>
+			<ul>
+				{% for ip in ips %}
+					<li>{{ ip.ip }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>
